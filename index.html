@@ -1,7 +1,44 @@
 <!DOCTYPE html>
-<html>
-<body>
-  <h1>Geolocation</h1>
-  <p>Initial Checkin</p>
-</body>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <title>Live camps</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="map.css">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="map.js" defer></script>
+        <script src="ui.js" defer></script>
+        <script src="geolocation.js" defer></script>
+    </head>
+    <body class="mdc-typography">
+        <div class="footer">
+            <div id="ip"></div>
+            <div id="loc"></div>
+        </div>
+        <div class="fullscreen">
+            <div class="map"></div>
+        </div>
+        <div class="mdc-dialog">
+            <div class="mdc-dialog__container">
+                <div class="mdc-dialog__surface" role="alertdialog" aria-modal="true" aria-labelledby="my-dialog-title" aria-describedby="my-dialog-content">
+                    <h2 class="mdc-dialog__title" id="my-dialog-title">Live Feed</h2>
+                    <div class="mdc-dialog__content" id="my-dialog-content">
+                        <img class="loading" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/35771931234507.564a1d2403b3a.gif">
+                        <img class="webcam" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                    </div>
+                    <div class="mdc-dialog__actions">
+                        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="close">
+                            <div class="mdc-button__ripple"></div>
+                            <span class="mdc-button__label">Close</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-dialog__scrim"></div>
+        </div>
+    </body>
 </html>

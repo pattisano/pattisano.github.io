@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-75.548302,42.817501]
+    },
+    "properties": {
+        "title": "New York Hwy",
+        "url": "http://149.43.156.105/mjpg/video.mjpg"
+    }
+  }, {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-115.468300,32.651901]
+    },
+    "properties": {
+        "url": "http://201.166.63.44/axis-cgi/mjpg/video.cgi",
+        "title": "US/MX Border"
+    }
+    
+  }, {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [30.2642, 59.8944]
+    },
+    "properties": {
+        "title": "Saint Petersburg Play Area",
+        "url": "http://95.161.27.60/mjpg/video.mjpg"
+    }    
+  }, {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [135.216700, 35.066700]
+    },
+    "properties": {
+        "title": "Sasayama Traffic Cam",
+        "url": "http://121.83.134.14/-wvhttp-01-/GetOneShot?frame_count=no_limit"
+    }    
+  }]
+}
